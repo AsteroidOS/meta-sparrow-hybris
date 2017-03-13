@@ -17,9 +17,20 @@ SRC_URI = "git://android.googlesource.com/kernel/msm;branch=android-msm-sparrow-
     file://0001-Remove-unecessary-include-to-axc_PM8226Charger.h.patch \
     file://0001-msm-mdss-mdp-Don-t-use-tracing-features.patch \
     file://0001-Makefile-patch-fixes-ASUS_SW_VER-error.patch \
+    file://0001-Revert-sparrow-wren-bt-Remove-redundancy-code.patch \
+    file://0001-Revert-Enable-Nitrous-BT-power-management-driver-for.patch \
+    file://0002-Revert-Add-Nitrous-driver-for-BT-power-management.patch \
+    file://0001-Patch-bluesleep.c.patch \
+    file://0001-Backport-mainline-4.1-Bluetooth-subsystem.patch \
+    file://0002-bluesleep-Use-kernel-s-HCI-events-instead-of-proc-bl.patch \
+    file://0001-Revert-Sparrow-audio-security-patch-for-CVE-2016-206.patch \
+    file://0001-Revert-Add-wake_peer-hook-to-MSM-HS-UART-driver.patch \
+    file://0001-Use-generic-dump-function.patch \
+    file://0001-Use-normal-touch-handling-all-the-time.patch \
+    file://0001-Disable-isTouchLocked.patch \
     file://defconfig \
     file://img_info "
-SRCREV = "3d2fa521411917b5a1683fec42ad2a8e50aee79f"
+SRCREV = "00f21f748f01888888909f9f58280f5a363cd5f9"
 LINUX_VERSION ?= "3.10"
 PV = "${LINUX_VERSION}+marshmallow"
 S = "${WORKDIR}/git"
